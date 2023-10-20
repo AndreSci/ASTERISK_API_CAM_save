@@ -1,0 +1,396 @@
+2023-10-20/13.56.59	EVENT	server	----- Открываем сокет -----
+2023-10-20/13.57.00	EXCEPTION	server	Исключение: timed out - Traceback (most recent call last):
+  File "C:\PYTHON\ASTERISK_API\main.py", line 57, in server
+    conn, addr = ser.accept()
+  File "C:\Users\ati\AppData\Local\Programs\Python\Python310\lib\socket.py", line 293, in accept
+    fd, addr = self._accept()
+TimeoutError: timed out
+
+2023-10-20/13.57.01	EXCEPTION	server	Исключение: timed out - Traceback (most recent call last):
+  File "C:\PYTHON\ASTERISK_API\main.py", line 57, in server
+    conn, addr = ser.accept()
+  File "C:\Users\ati\AppData\Local\Programs\Python\Python310\lib\socket.py", line 293, in accept
+    fd, addr = self._accept()
+TimeoutError: timed out
+
+2023-10-20/13.57.02	EXCEPTION	server	Исключение: timed out - Traceback (most recent call last):
+  File "C:\PYTHON\ASTERISK_API\main.py", line 57, in server
+    conn, addr = ser.accept()
+  File "C:\Users\ati\AppData\Local\Programs\Python\Python310\lib\socket.py", line 293, in accept
+    fd, addr = self._accept()
+TimeoutError: timed out
+
+2023-10-20/13.57.03	EXCEPTION	server	Исключение: timed out - Traceback (most recent call last):
+  File "C:\PYTHON\ASTERISK_API\main.py", line 57, in server
+    conn, addr = ser.accept()
+  File "C:\Users\ati\AppData\Local\Programs\Python\Python310\lib\socket.py", line 293, in accept
+    fd, addr = self._accept()
+TimeoutError: timed out
+
+2023-10-20/13.58.16	EVENT	server	----- Открываем сокет -----
+2023-10-20/13.58.31	EVENT	read_port	b'CAM 1' - port:('127.0.0.1', 50795)
+2023-10-20/14.04.24	EVENT	start	----- Открываем сокет -----
+2023-10-20/14.06.22	EVENT	start	Открытие сокета: 0.0.0.0:8071
+2023-10-20/14.06.22	EVENT	start	Начало прослушивания порта...
+2023-10-20/14.23.27	EVENT	start	Открытие сокета: 0.0.0.0:8083
+2023-10-20/14.23.27	EVENT	start	Начало прослушивания порта...
+2023-10-20/14.25.17	EVENT	start	Открытие сокета: 0.0.0.0:8083
+2023-10-20/14.25.17	EVENT	start	Начало прослушивания порта...
+2023-10-20/14.27.34	EVENT	start	Открытие сокета: 0.0.0.0:8083
+2023-10-20/14.27.34	EVENT	start	Начало прослушивания порта...
+2023-10-20/14.34.20	EVENT	create_cams_threads	Будут создан поток для cam1
+2023-10-20/14.34.20	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.20	EVENT	start	Открытие сокета: 0.0.0.0:8083
+2023-10-20/14.34.20	EVENT	start	Начало прослушивания порта...
+2023-10-20/14.34.20	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.20	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.21	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.21	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.21	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.21	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.21	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.21	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.21	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.21	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.21	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.21	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.21	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.21	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.21	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.21	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.21	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.21	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.22	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.22	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.22	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.22	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.22	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.22	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.22	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.22	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.22	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.22	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.22	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.22	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.22	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.22	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.22	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.22	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.22	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.22	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.23	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.23	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.23	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.23	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.23	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.23	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.23	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.23	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.23	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.23	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.23	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.23	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.23	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.23	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.23	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.23	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.23	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.23	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.24	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.24	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.24	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.24	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.24	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.24	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.24	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.24	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.24	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.24	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.24	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.24	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.24	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.24	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.24	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.24	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.24	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.24	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.25	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.25	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.25	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.25	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.25	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.25	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.25	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.25	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.25	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.25	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.25	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.25	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.25	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.25	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.25	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.25	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.25	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.25	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.26	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.26	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.26	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.26	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.26	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.26	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.26	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.26	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.26	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.26	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.26	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.26	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.26	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.26	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.26	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.26	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.26	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.26	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.27	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.27	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.27	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.27	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.27	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.27	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.27	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.27	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.27	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.27	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.27	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.27	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.27	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.27	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.27	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.27	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.27	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.27	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.28	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.28	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.28	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.28	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.28	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.28	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.28	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.28	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.28	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.28	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.28	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.28	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.28	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.28	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.28	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.28	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.28	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.28	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.28	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.28	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.29	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.29	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.29	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.29	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.29	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.29	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.29	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.29	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.29	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.29	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.29	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.29	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.29	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.29	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.29	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.29	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.29	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.29	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.30	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.30	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.30	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.30	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.30	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.30	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.30	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.30	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.30	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.30	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.34.30	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.34.30	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.36.23	EVENT	create_cams_threads	Будут создан поток для cam1
+2023-10-20/14.36.23	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.36.23	EVENT	start	Открытие сокета: 0.0.0.0:8083
+2023-10-20/14.36.23	EVENT	start	Начало прослушивания порта...
+2023-10-20/14.36.23	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.36.28	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.36.28	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.36.33	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.36.34	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.36.39	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.36.39	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.32	EVENT	create_cams_threads	Будут создан поток для cam1
+2023-10-20/14.44.32	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.32	EVENT	start	Открытие сокета: 0.0.0.0:8083
+2023-10-20/14.44.32	EVENT	start	Начало прослушивания порта...
+2023-10-20/14.44.32	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.32	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.33	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.33	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.33	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.33	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.33	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.33	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.33	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.33	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.33	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.33	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.33	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.33	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.33	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.33	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.33	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.33	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.34	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.34	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.34	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.34	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.34	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.34	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.34	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.34	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.34	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.34	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.34	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.34	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.34	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.34	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.34	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.34	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.34	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.34	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.35	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.35	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.35	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.35	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.35	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.35	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.35	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.35	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.35	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.35	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.35	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.35	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.35	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.35	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.35	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.35	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.35	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.35	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.36	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.36	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.36	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.36	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.36	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.36	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.36	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.36	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.36	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.36	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.36	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.36	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.36	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.36	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.36	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.36	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.36	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.36	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.37	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.37	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.37	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.37	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.37	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.37	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.37	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.37	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.37	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.37	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.37	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.37	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.37	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.37	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.37	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.37	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.37	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.37	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.38	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.38	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.38	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.38	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.38	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.38	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.38	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.38	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.38	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.38	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.38	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.38	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.38	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.38	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.38	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.38	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.38	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.38	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.39	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.39	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.39	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.39	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.39	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.39	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.39	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.39	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.39	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.39	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.39	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.39	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.39	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.39	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.39	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.39	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.39	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.39	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.40	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.40	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.40	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.40	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.40	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.40	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.40	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.40	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.40	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.40	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.40	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.40	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.44.40	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.44.40	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.45.48	EVENT	create_cams_threads	Будут создан поток для cam1
+2023-10-20/14.45.48	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.45.48	EVENT	start	Открытие сокета: 0.0.0.0:8083
+2023-10-20/14.45.48	EVENT	start	Начало прослушивания порта...
+2023-10-20/14.45.48	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.45.53	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.45.53	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.45.58	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.45.58	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.46.03	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.46.03	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.46.09	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.46.09	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.46.13	EVENT	create_cams_threads	Будут создан поток для cam1
+2023-10-20/14.46.13	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.46.13	EVENT	start	Открытие сокета: 0.0.0.0:8071
+2023-10-20/14.46.13	EVENT	start	Начало прослушивания порта...
+2023-10-20/14.46.13	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
+2023-10-20/14.46.15	EVENT	read_port	b'CAM 1' - port:('127.0.0.1', 51345)
+2023-10-20/14.46.18	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.48.188
+2023-10-20/14.46.18	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.48.188
