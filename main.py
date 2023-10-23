@@ -1,8 +1,10 @@
 # echo-server
-
+import datetime
 import socket
 import threading
 import time
+import json
+from io import StringIO
 
 from misc.logger import Logger
 from src.frames import create_cams_threads
@@ -12,6 +14,8 @@ logger = Logger()
 
 HOST = "0.0.0.0"
 PORT = 8071
+
+CAM_LIST = dict()
 
 
 # Таймер для тестов
@@ -35,9 +39,49 @@ def read_port(conn, addr):
 
             str_data = data.decode("utf-8")
 
-            if str_data[:3] == 'CAM':
-                res = str_data.split()
-                print(res)
+            try:
+                json_data = json.load(StringIO(str_data))
+
+                cam_name = f"cam{json_data['cam']}"
+
+                try:
+                    valid_frame = False
+                    # Команда на запись кадра в файл
+                    if CAM_LIST[cam_name].set_url_frame(f"{json_data['data']}"):
+                        valid_frame = CAM_LIST[cam_name].create_frame(logger)
+
+                    if valid_frame:
+                        logger.event(f"Успешно сохранен кадр: имя файла - {json_data['data']} камера - {cam_name}")
+                    else:
+                        logger.add_log(f"WARNING\tread_port\t"
+                                       f"Не удалось сохранить кард: "
+                                       f"имя файла - {json_data['data']} камера - {cam_name}")
+
+                except Exception as ex:
+                    logger.exception(f"Не удалось получить кадр из камеры: {ex}")
+
+            except Exception as ex:
+                logger.exception(f"Ошибка работы с данными в запросе: {ex}: {str_data}")
+
+            # if str_data[:3] == 'CAM':
+            #     res = str_data.split()
+            #
+            #     cam_name = 'cam' + cam_name[str_data.find(':') + 1:]
+            #
+            #     try:
+            #         # Команда на запись кадра в файл
+            #         if CAM_LIST[cam_name].set_url_frame(f"{}")
+            #             valid_frame = CAM_LIST[cam_name].create_frame(logger)
+            #
+            #         if valid_frame:
+            #             logger.event(f"Успешно сохранен кадр: время - {datetime.datetime.now()} камера - {cam_name}")
+            #         else:
+            #             logger.add_log(f"WARNING\tread_port\t"
+            #                            f"Не удалось сохранить кард: - {datetime.datetime.now()} камера - {cam_name}")
+            #
+            #     except Exception as ex:
+            #         logger.exception(f"Не удалось получить кадр из камеры: {ex}")
+            #     print(res)
 
             logger.event(f"{data} - port:{addr}")
             conn.sendall(b"SUCCESS")
@@ -49,7 +93,7 @@ class ServerTCP:
         self.host = host
         self.port = port
         self.logger = logger_class
-        self.cameras = create_cams_threads(set_ini_class.cams(), logger_class)
+        # self.cameras = create_cams_threads(set_ini_class.cams(), logger_class)
 
     def start(self):
         while True:
@@ -81,6 +125,8 @@ if __name__ == "__main__":
     set_ini = SettingsIni()
 
     if set_ini.create_settings():
+        CAM_LIST = create_cams_threads(set_ini.cams(), logger)
+
         server = ServerTCP(set_ini.host(), set_ini.port(), logger, set_ini)
         server.start()
     else:

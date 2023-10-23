@@ -2,6 +2,7 @@ import time
 import copy
 import cv2
 import threading
+import os
 
 from misc.logger import Logger
 
@@ -25,6 +26,7 @@ class ThreadVideoRTSP:
     def __init__(self, cam_name: str, url: str):
         self.url = url
         self.cam_name = cam_name
+        self.url_frame = "./frames/test.jpg"
 
         self.last_frame = b''
         self.no_frame = b''
@@ -71,7 +73,11 @@ class ThreadVideoRTSP:
                 logger.add_log(f"EVENT\tThreadVideoRTSP.start()\t"
                                f"Попытка подключиться к камере: {self.cam_name} - {self.url}")
 
-            capture = cv2.VideoCapture(self.url)
+            if self.url == '0':
+                capture = cv2.VideoCapture(0)
+            else:
+                capture = cv2.VideoCapture(self.url)
+
             capture.set(cv2.CAP_PROP_BUFFERSIZE, 4)
 
             if capture.isOpened():
@@ -102,6 +108,7 @@ class ThreadVideoRTSP:
                                 # Сохраняем кадр в переменную
                                 with self.th_do_frame_lock:
                                     self.last_frame = frame_jpg.tobytes()
+                                    cv2.imwrite(self.url_frame, frame)  # TODO тестируем
 
                             self.do_frame.set(False)
 
@@ -149,7 +156,7 @@ class ThreadVideoRTSP:
 
             return self.no_frame
 
-    def create_frame(self, logger: Logger):
+    def create_frame(self, logger: Logger) -> bool:
         """ Функция задает флаг на создание кадра в файл """
         ret_value = True
 
@@ -176,6 +183,22 @@ class ThreadVideoRTSP:
 
             time.sleep(0.03)
             wait_time += 1
+
+        return ret_value
+
+    def set_url_frame(self, url_frame: str) -> bool:
+        index = 0
+        ret_value = False
+
+        while index < 100:
+            if not self.do_frame.get():
+                self.url_frame = os.path.join(os.getcwd(), f"frames\\{url_frame}.jpg")
+                ret_value = True
+                print(f"Успешно изменен путь для файла: {self.url_frame}")
+                break
+            else:
+                index += 1
+                time.sleep(0.03)
 
         return ret_value
 
