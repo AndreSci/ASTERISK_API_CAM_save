@@ -9,11 +9,11 @@ HOST = "127.0.0.1"
 PORT = 8071
 
 
-def client():
+def client(cam_number: int):
     today = datetime.today()
 
     date_time = str(today.strftime("%Y-%m-%d_%H-%M"))
-    dict_data = {"cam": 3, 'data': f"{date_time} {time.time()}"}
+    dict_data = {"cam": cam_number, 'data': f"{date_time} {time.time()}"}
 
     json_str = json.dumps(dict_data).encode('utf-8')
     json_bytes = bytes(json_str)
@@ -30,10 +30,11 @@ if __name__ == "__main__":
     start_time = time.time()
     list_tr = []
 
-    while index <= 1:
+    while index <= 20:
         index += 1
-        tr = threading.Thread(target=client)
+        tr = threading.Thread(target=client, args=[3, ])
         tr.start()
+        time.sleep(0.05)
         list_tr.append(tr)
 
     for tr in list_tr:
