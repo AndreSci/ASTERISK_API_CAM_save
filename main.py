@@ -1,9 +1,9 @@
 # echo-server
-import datetime
 import socket
 import threading
 import time
 import json
+import os
 from io import StringIO
 
 from misc.logger import Logger
@@ -16,6 +16,22 @@ HOST = "0.0.0.0"
 PORT = 8071
 
 CAM_LIST = dict()
+FRAMES_PATH = os.path.join(os.getcwd(), "frames\\")
+
+
+def test_dir(frames_path) -> bool:
+    """ Функция проверки папки куда сохраняются кадры """
+    ret_value = True
+
+    try:
+        if not os.path.exists(frames_path):  # Если нет директории log_path пробуем её создать.
+            os.makedirs(frames_path)
+            print(f"Была создана директория куда сохранять кадры: {frames_path}")
+    except Exception as ex:
+        print(f"Ошибка при проверке/создании директории куда сохранять кадры: {ex}")
+        ret_value = False
+
+    return ret_value
 
 
 # Таймер для тестов
@@ -63,26 +79,6 @@ def read_port(conn, addr):
             except Exception as ex:
                 logger.exception(f"Ошибка работы с данными в запросе: {ex}: {str_data}")
 
-            # if str_data[:3] == 'CAM':
-            #     res = str_data.split()
-            #
-            #     cam_name = 'cam' + cam_name[str_data.find(':') + 1:]
-            #
-            #     try:
-            #         # Команда на запись кадра в файл
-            #         if CAM_LIST[cam_name].set_url_frame(f"{}")
-            #             valid_frame = CAM_LIST[cam_name].create_frame(logger)
-            #
-            #         if valid_frame:
-            #             logger.event(f"Успешно сохранен кадр: время - {datetime.datetime.now()} камера - {cam_name}")
-            #         else:
-            #             logger.add_log(f"WARNING\tread_port\t"
-            #                            f"Не удалось сохранить кард: - {datetime.datetime.now()} камера - {cam_name}")
-            #
-            #     except Exception as ex:
-            #         logger.exception(f"Не удалось получить кадр из камеры: {ex}")
-            #     print(res)
-
             logger.event(f"{data} - port:{addr}")
             conn.sendall(b"SUCCESS")
 
@@ -124,7 +120,7 @@ class ServerTCP:
 if __name__ == "__main__":
     set_ini = SettingsIni()
 
-    if set_ini.create_settings():
+    if set_ini.create_settings() and test_dir(FRAMES_PATH):
         CAM_LIST = create_cams_threads(set_ini.cams(), logger)
 
         server = ServerTCP(set_ini.host(), set_ini.port(), logger, set_ini)
