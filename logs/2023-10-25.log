@@ -1,0 +1,36 @@
+2023-10-25/11.29.31	EVENT	create_cams_threads	Будут создан поток для cam3
+2023-10-25/11.29.31	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam3 - 0
+2023-10-25/11.29.31	EVENT	start	Открытие сокета: 0.0.0.0:8071
+2023-10-25/11.29.31	EVENT	start	Начало прослушивания порта...
+2023-10-25/11.29.33	SUCCESS	ThreadVideoRTSP.start()	Создано подключение к cam3 - 0
+2023-10-25/11.29.38	EVENT	read_port	Успешно сохранен кадр: имя файла - 2023-10-25_11-29 1698222578.1404703 камера - cam3
+2023-10-25/11.29.38	EVENT	read_port	b'{"cam": 3, "data": "2023-10-25_11-29 1698222578.1404703"}' - port:('127.0.0.1', 59047)
+2023-10-25/11.30.08	EVENT	read_port	Успешно сохранен кадр: имя файла - 2023-10-25_11-30 1698222608.6081855 камера - cam3
+2023-10-25/11.30.08	EVENT	read_port	b'{"cam": 3, "data": "2023-10-25_11-30 1698222608.6081855"}' - port:('127.0.0.1', 59054)
+2023-10-25/13.12.55	EVENT	create_cams_threads	Будут создан поток для cam3
+2023-10-25/13.12.55	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam3 - 0
+2023-10-25/13.12.55	EVENT	create_cams_threads	Будут создан поток для cam1
+2023-10-25/13.12.55	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.15.70
+2023-10-25/13.12.55	EVENT	start	Открытие сокета: 0.0.0.0:8071
+2023-10-25/13.12.55	EVENT	start	Начало прослушивания порта...
+2023-10-25/13.12.56	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.15.70
+2023-10-25/13.12.57	SUCCESS	ThreadVideoRTSP.start()	Создано подключение к cam3 - 0
+2023-10-25/13.13.01	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.15.70
+2023-10-25/13.13.01	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.15.70
+2023-10-25/13.13.06	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - admin:admin@192.168.15.70
+2023-10-25/13.13.06	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: admin:admin@192.168.15.70
+2023-10-25/13.14.07	EVENT	create_cams_threads	Будут создан поток для cam3
+2023-10-25/13.14.07	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam3 - 0
+2023-10-25/13.14.07	EVENT	create_cams_threads	Будут создан поток для cam1
+2023-10-25/13.14.07	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - rtsp://admin:admin@192.168.15.70
+2023-10-25/13.14.07	EVENT	start	Открытие сокета: 0.0.0.0:8071
+2023-10-25/13.14.07	EVENT	start	Начало прослушивания порта...
+2023-10-25/13.14.09	SUCCESS	ThreadVideoRTSP.start()	Создано подключение к cam3 - 0
+2023-10-25/13.15.09	EVENT	read_port	Успешно сохранен кадр: имя файла - 2023-10-25_13-15 1698228909.2393906 камера - cam3
+2023-10-25/13.15.09	EVENT	read_port	b'{"cam": 3, "data": "2023-10-25_13-15 1698228909.2393906"}' - port:('127.0.0.1', 60744)
+2023-10-25/13.15.38	WARNING	ThreadVideoRTSP.start()	cam1 - Камера отключена: rtsp://admin:admin@192.168.15.70
+2023-10-25/13.15.43	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - rtsp://admin:admin@192.168.15.70
+2023-10-25/13.59.05	EVENT	create_cams_threads	Будут создан поток для cam1
+2023-10-25/13.59.05	EVENT	ThreadVideoRTSP.start()	Попытка подключиться к камере: cam1 - rtsp://admin:admin@192.168.15.70:554/live/main
+2023-10-25/13.59.05	EVENT	start	Открытие сокета: 0.0.0.0:8071
+2023-10-25/13.59.05	EVENT	start	Начало прослушивания порта...

@@ -143,7 +143,7 @@ class Logger(metaclass=SingletonBaseClass):
         return self.add_log(f"EXCEPTION\t{code_obj_name}\t{text} - {traceback.format_exc()}", print_it)
 
 
-HOST = "127.0.0.1"
+HOST = "192.168.15.10"
 PORT = 8071
 
 logger = Logger()
@@ -182,8 +182,7 @@ def client(cam_number: int):
     return ret_value
 
 
-def main():
-    cam_number = 3
+def main(cam_number=1):
     # Замеряем время исполнения скрипта
     start_time = time.time()
 
@@ -220,4 +219,5 @@ def speed_test():
 
 
 if __name__ == "__main__":
-    main()
+    main(input("Укажите порядковый номер камеры из settings.ini файл: "))
+    input()

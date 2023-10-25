@@ -5,6 +5,7 @@ import time
 import json
 import os
 from io import StringIO
+import ctypes
 
 from misc.logger import Logger
 from src.frames import create_cams_threads
@@ -63,7 +64,7 @@ def read_port(conn, addr):
                 try:
                     valid_frame = False
                     # Команда на запись кадра в файл
-                    if CAM_LIST[cam_name].set_url_frame(f"{json_data['data']}"):
+                    if CAM_LIST[cam_name].set_url_frame(f"{cam_name}_{json_data['data']}"):
                         valid_frame = CAM_LIST[cam_name].create_frame(logger)
 
                     if valid_frame:
@@ -96,7 +97,7 @@ class ServerTCP:
             try:
                 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as ser:
                     ser.bind((self.host, self.port))
-                    ser.settimeout(1)
+                    ser.settimeout(3)
 
                     ser.listen()
                     self.logger.event("Начало прослушивания порта...")
@@ -120,6 +121,9 @@ if __name__ == "__main__":
     set_ini = SettingsIni()
 
     if set_ini.create_settings() and test_dir(FRAMES_PATH):
+        # Меняем имя терминала
+        ctypes.windll.kernel32.SetConsoleTitleW(f"TCP ASTERISK CAM_API port: {set_ini.port()}")
+
         CAM_LIST = create_cams_threads(set_ini.cams(), logger)
 
         server = ServerTCP(set_ini.host(), set_ini.port(), logger)
