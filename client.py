@@ -73,15 +73,8 @@ class Logger(metaclass=SingletonBaseClass):
 
             if test_dir(LOGGER_PATH):
 
-                # if LOGGER_PATH[-1] == '\\' or LOGGER_PATH[-1] == '/':
-                #     pass  # Захотелось использовать pass
-                # else:
-                #     log_path = LOGGER_PATH + '/'
-
                 with self.log_guard:  # Защищаем поток
 
-                    # if print_it:
-                    #     print(date_time + "\t" + text)
                     if print_it:
                         if 'ERROR' == text[:5]:
                             print(f"{BColors.col_fail}{date_time}\t{text}{BColors.col_endc}")

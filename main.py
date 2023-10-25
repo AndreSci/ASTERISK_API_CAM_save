@@ -85,11 +85,10 @@ def read_port(conn, addr):
 
 class ServerTCP:
     """ Сервер рассчитан на короткие соединения с малым объемом данных"""
-    def __init__(self, host: str, port: int, logger_class: Logger, set_ini_class: SettingsIni):
+    def __init__(self, host: str, port: int, logger_class: Logger):
         self.host = host
         self.port = port
         self.logger = logger_class
-        # self.cameras = create_cams_threads(set_ini_class.cams(), logger_class)
 
     def start(self):
         while True:
@@ -123,7 +122,7 @@ if __name__ == "__main__":
     if set_ini.create_settings() and test_dir(FRAMES_PATH):
         CAM_LIST = create_cams_threads(set_ini.cams(), logger)
 
-        server = ServerTCP(set_ini.host(), set_ini.port(), logger, set_ini)
+        server = ServerTCP(set_ini.host(), set_ini.port(), logger)
         server.start()
     else:
         input()

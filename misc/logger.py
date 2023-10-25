@@ -28,9 +28,10 @@ def test_dir(log_path) -> bool:
     try:
         if not os.path.exists(log_path):  # Если нет директории log_path пробуем её создать.
             os.makedirs(log_path)
-            print(f"{BColors.col_warning}Была создана директория для лог-фалов:{BColors.col_endc} {log_path}")
+            print(f"EVENT\ttest_dir\t{BColors.col_warning}"
+                  f"Была создана директория для лог-фалов:{BColors.col_endc} {log_path}")
     except Exception as ex:
-        print(f"Ошибка при проверка/создании директории лог файлов: {ex}")
+        print(f"EXCEPTION\ttest_dir\tОшибка при проверка/создании директории лог файлов: {ex}")
         ret_value = False
 
     return ret_value
@@ -70,15 +71,8 @@ class Logger(metaclass=SingletonBaseClass):
 
             if test_dir(LOGGER_PATH):
 
-                # if LOGGER_PATH[-1] == '\\' or LOGGER_PATH[-1] == '/':
-                #     pass  # Захотелось использовать pass
-                # else:
-                #     log_path = LOGGER_PATH + '/'
-
                 with self.log_guard:  # Защищаем поток
 
-                    # if print_it:
-                    #     print(date_time + "\t" + text)
                     if print_it:
                         if 'ERROR' == text[:5]:
                             print(f"{BColors.col_fail}{date_time}\t{text}{BColors.col_endc}")
